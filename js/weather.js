@@ -68,7 +68,7 @@ function gettingJSON(){
         document.getElementById("temp").innerHTML = temp
 
         iconcode = json.weather[0].icon
-        tempImg = "http://openweathermap.org/img/w/" + iconcode + ".png"
+        tempImg = "https://openweathermap.org/img/w/" + iconcode + ".png"
         $("#tempImg").attr("src", tempImg);
 
         tempDescripton = json["weather"][0]["description"]
