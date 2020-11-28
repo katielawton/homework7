@@ -35,10 +35,10 @@ function gettingJSON(){
 
     // Your code here. 
     if (/\d/.test(location)) {
-        query = "http://api.openweathermap.org/data/2.5/weather?zip=" + location + "&units=" + format +"&appid=54b2b0b515d01914aea74a40973c8304"
+        query = "https://api.openweathermap.org/data/2.5/weather?zip=" + location + "&units=" + format +"&appid=54b2b0b515d01914aea74a40973c8304"
     }
     else {
-        query = "http://api.openweathermap.org/data/2.5/weather?q=" + location +"&units=" + format + "&appid=54b2b0b515d01914aea74a40973c8304"
+        query = "https://api.openweathermap.org/data/2.5/weather?q=" + location +"&units=" + format + "&appid=54b2b0b515d01914aea74a40973c8304"
     }
     
     console.log("Query is :" + query);
