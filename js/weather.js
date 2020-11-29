@@ -60,19 +60,21 @@ function gettingJSON(){
         //elements in HTML.  
         //I would print the JSON to the console
         // Your code here.
-        console.log(json)
-        loc = json["name"]
+        // console.log(json)
+        // loc = json["name"]
+        loc = json.name
         document.getElementById("loc").innerHTML = loc
 
-        temp = json["main"]["temp"] + " with " + json["weather"][0]["description"]
+        // temp = json["main"]["temp"] + " with " + json["weather"][0]["description"]
+        temp = json.main.temp + " with " + json.weather[0].description
         document.getElementById("temp").innerHTML = temp
 
         iconcode = json.weather[0].icon
         tempImg = "https://openweathermap.org/img/w/" + iconcode + ".png"
         $("#tempImg").attr("src", tempImg);
 
-        tempDescripton = json["weather"][0]["description"]
-        console.log(tempDescripton)
+        // tempDescripton = json["weather"][0]["description"]
+        tempDescripton = json.weather[0].description
         $("#tempImg").attr("alt", tempDescripton)
 
     });
